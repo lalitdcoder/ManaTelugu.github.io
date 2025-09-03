@@ -1,0 +1,214 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Baloo 2', 'Nunito', Arial, sans-serif;
+  color: #222;
+  background: #f8fafc;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4vw;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(90, 110, 130, 0.05);
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3178c6;
+  letter-spacing: 0.03em;
+}
+.nav-links a {
+  margin-left: 1.5rem;
+  color: #222;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+}
+.nav-links .active {
+  color: #3178c6;
+  font-weight: 600;
+}
+/* Hero Section */
+header {
+  background: linear-gradient(120deg, #f0f6ff 60%, #e3f7f1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  text-align: center;
+  border-bottom: 2px solid #e7f0fa;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  color: #3178c6;
+  margin-bottom: 0.5rem;
+  font-family: 'Baloo 2', cursive, sans-serif;
+}
+.hero-content .tagline {
+  font-size: 1.5rem;
+  color: #249966;
+  margin-bottom: 1.5rem;
+}
+#cta-btn {
+  background: #3178c6;
+  color: #fff;
+  font-size: 1.125rem;
+  padding: 0.9em 2.1em;
+  border-radius: 2em;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .18s;
+  box-shadow: 0 3px 18px rgba(49,120,198,.09);
+}
+#cta-btn:hover {
+  background: #249966;
+}
+/* Features Section */
+.features {
+  max-width: 680px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 28px rgba(49,120,198,.07);
+  padding: 2rem 2.5vw;
+}
+.features h2 {
+  font-size: 1.6rem;
+  color: #249966;
+  margin-bottom: 1.1rem;
+  font-family: 'Baloo 2', cursive, sans-serif;
+}
+.features ul {
+  list-style: none;
+}
+.features li {
+  font-size: 1.15rem;
+  margin-bottom: 0.9em;
+  padding-left: 1.1em;
+  position: relative;
+}
+.features li:before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
+  color: #ffb300;
+}
+
+/* Story Section */
+.story {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 2rem 2.5vw;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 28px rgba(49,120,198,.07);
+}
+.story h2 {
+  font-size: 1.35rem;
+  color: #3178c6;
+  margin-bottom: 0.7rem;
+}
+.privacy-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.privacy-btn {
+  background: #249966;
+  color: #fff;
+  padding: 0.9em 2.3em;
+  border-radius: 2em;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.125rem;
+  box-shadow: 0 3px 18px rgba(49,120,198,.09);
+  transition: background .18s;
+}
+.privacy-btn:hover {
+  background: #3178c6;
+}
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+  padding: 1.5rem 0 1rem 0;
+  margin-top: auto;
+}
+
+/* Privacy Policy Page */
+.privacy-main {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 28px rgba(49,120,198,.07);
+  padding: 2.5rem 2.5vw;
+}
+.privacy-main h1 {
+  font-size: 2rem;
+  color: #3178c6;
+  margin-bottom: 1rem;
+}
+.privacy-main h2 {
+  font-size: 1.3rem;
+  color: #249966;
+  margin: 1.1rem 0 0.5rem 0;
+}
+.privacy-main ul {
+  list-style: none;
+  margin-bottom: 1.1rem;
+}
+.privacy-main li {
+  font-size: 1.1rem;
+  margin-bottom: 0.85em;
+  padding-left: 1em;
+  position: relative;
+}
+.privacy-main li:before {
+  content: "🛡️";
+  position: absolute;
+  left: 0;
+  color: #3178c6;
+}
+.parental-rights {
+  margin-top: 2.4rem;
+  background: #f0f6ff;
+  padding: 1.2rem 1rem;
+  border-radius: 12px;
+}
+.parental-rights h2 {
+  font-size: 1.1rem;
+  color: #3178c6;
+  margin-bottom: 0.6rem;
+}
+
+/* Responsive Design */
+@media (max-width: 780px) {
+  header {
+    height: 200px;
+    padding: 1.5rem 0;
+  }
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+  .hero-content .tagline {
+    font-size: 1.15rem;
+  }
+  .features, .story, .privacy-main {
+    padding: 1.2rem 3vw;
+    margin: 1rem;
+  }
+}
