@@ -212,3 +212,44 @@ footer {
     margin: 1rem;
   }
 }
+
+/* Support Page */
+.support-main {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 28px rgba(49,120,198,.07);
+  padding: 2.5rem 2.5vw;
+}
+.support-main h1 {
+  font-size: 2rem;
+  color: #249966;
+  margin-bottom: 1rem;
+}
+.support-main h2 {
+  font-size: 1.2rem;
+  color: #3178c6;
+  margin-top: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+.support-main p, .support-main ul {
+  font-size: 1.12rem;
+  margin-bottom: 1.1rem;
+}
+.quick-facts ul {
+  list-style: none;
+  padding-left: 0;
+}
+.quick-facts li {
+  margin-bottom: 0.65em;
+  padding-left: 1.1em;
+  position: relative;
+}
+.quick-facts li:before {
+  content: "💬";
+  position: absolute;
+  left: 0;
+  color: #3178c6;
+}
+
